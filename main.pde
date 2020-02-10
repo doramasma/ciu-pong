@@ -201,8 +201,8 @@ void keyPressed() {
         jugador2.setJy(200);
       }
   }
-    if (key == 'w') keys[0] =true;
-    if (key == 's') keys[1] =true;
+    if (key == 'w' || key == 'W') keys[0] =true;
+    if (key == 's' || key == 'S') keys[1] =true;
     if (key == CODED) {
       if (keyCode == UP)  keys[2] =true;
       if (keyCode == DOWN)  keys[3] =true;
@@ -211,8 +211,8 @@ void keyPressed() {
 }
 
 void keyReleased() {
-  if (key == 'w') keys[0] =false;
-  if (key == 's') keys[1] =false;
+  if (key == 'w' || key == 'W') keys[0] =false;
+  if (key == 's' || key == 'S') keys[1] =false;
   if (key == CODED) {
     if (keyCode == UP)  keys[2] =false;
     if (keyCode == DOWN)  keys[3] =false;
