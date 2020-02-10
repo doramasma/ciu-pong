@@ -35,10 +35,14 @@ Para el desarrollo de la práctica se han utilizado los librerías:
 
 ### Información general <a id="informaciónGeneral"></a>
 
-Cuando comienza el juego, aparecerá una ventana principal 
+Cuando comienza el juego, aparecerá una ventana principal donde se explicarán las intrucciones. En esta vista, se puede observar que los controles son los siguientes: 
+- Jugador1: up = w, down = s
+- Jugador2: up = flecha arriba, down = flecha abajo
+Luego, comenzará el juego hasta el infinito (nuestro modelo de negocio es tener al jugador el máximo tiempo posible enganchado). Además, comentar que la bola siempre saldrá hacia el que ha marcado el último punto (imitando al pong).
+
 
 ### Sonido
-Se han utilizado sonidos de 8 bits, del pong original. Con la intención de recordarnos a dicho juego
+Se han utilizado sonidos de 8 bits, del [pong original](https://www.youtube.com/watch?v=fiShX2pTz9A). Con la intención de recordarnos a dicho juego y así volver a esos años 70s
 
 ### Rebotes
 
