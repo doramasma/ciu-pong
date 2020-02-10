@@ -4,8 +4,8 @@ import processing.sound.*;
 SoundFile player1, player2, rebote;
 PFont font1;
 PImage imageW, imageS, imageUp, imageDown;
-//int counter = 0;
-//GifMaker ficherogif;
+int counter = 0;
+GifMaker ficherogif;
 int lastWinner =0;
 Raqueta jugador1;
 Raqueta jugador2;
@@ -31,8 +31,8 @@ void setup() {
   imageUp = loadImage("./image/up.png");
   imageDown = loadImage("./image/down.png");
   game = false;
-  //ficherogif = new GifMaker( this , "animacion.gif") ;
-  //ficherogif.setRepeat(0);
+  ficherogif = new GifMaker( this , "animacion.gif") ;
+  ficherogif.setRepeat(0);
   fill(128);
   stroke(255, 255, 255);
   jugador1 = new Raqueta((int)(width*0.05), height/2, 20, 40);
@@ -45,12 +45,16 @@ void setup() {
 void draw() {
   if (!game) {
     background(0);
-    image(imageW, 150, 50, 80, 50);
-    image(imageS, 150, 300, 80, 50);
-    image(imageUp, 550, 50, 80, 50);
-    image(imageDown, 550, 300, 80, 50);
     textFont(font1, 20);
-    text("Press ENTER to start the game", 215, height/2 + 10 );
+    text("Jugador 1: ", width/2 - 60, 50 );
+    image(imageW, width/2 - 100 , 70, 80, 50);
+    image(imageS, width/2 , 70, 80, 50);
+    textFont(font1, 20);
+    text("Jugador 2: ", width/2 - 60, 160 );
+    image(imageUp, width/2 - 100, 180, 80, 50);
+    image(imageDown, width/2, 180, 80, 50);
+    textFont(font1, 20);
+    text("Pulsa Enter para jugar", 280, 300 );
     move();
     jugador1.drawRaqueta();
     jugador2.drawRaqueta();
@@ -65,7 +69,14 @@ void draw() {
 
     processBall();
   }
-  
+  if (counter > 5) {
+    ficherogif.addFrame();
+    counter = 0;
+    if (scoreJ1 > 2) {
+      ficherogif.finish();
+    }
+  }
+  counter++;
 }
 
 void setupBall() {
