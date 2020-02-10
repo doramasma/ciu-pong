@@ -35,7 +35,10 @@ Para el desarrollo de la práctica se han utilizado los librerías:
 
 ### Información general <a id="informaciónGeneral"></a>
 
+Cuando comienza el juego, aparecerá una ventana principal 
+
 ### Sonido
+Se han utilizado sonidos de 8 bits, del pong original. Con la intención de recordarnos a dicho juego
 
 ### Rebotes
 
