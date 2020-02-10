@@ -1,11 +1,11 @@
-import gifAnimation.*;
+//import gifAnimation.*;
 import processing.sound.*;
 
 SoundFile player1, player2, rebote;
 PFont font1;
 PImage imageW, imageS, imageUp, imageDown;
-int counter = 0;
-GifMaker ficherogif;
+//int counter = 0;
+//GifMaker ficherogif;
 int lastWinner =0;
 Raqueta jugador1;
 Raqueta jugador2;
@@ -31,8 +31,8 @@ void setup() {
   imageUp = loadImage("./image/up.png");
   imageDown = loadImage("./image/down.png");
   game = false;
-  ficherogif = new GifMaker( this , "animacion.gif") ;
-  ficherogif.setRepeat(0);
+  //ficherogif = new GifMaker( this , "animacion.gif") ;
+  //ficherogif.setRepeat(0);
   fill(128);
   stroke(255, 255, 255);
   jugador1 = new Raqueta((int)(width*0.05), height/2, 20, 40);
@@ -69,14 +69,7 @@ void draw() {
 
     processBall();
   }
-  if (counter > 5) {
-    ficherogif.addFrame();
-    counter = 0;
-    if (scoreJ1 > 2) {
-      ficherogif.finish();
-    }
-  }
-  counter++;
+
 }
 
 void setupBall() {
