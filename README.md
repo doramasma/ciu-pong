@@ -27,7 +27,7 @@ El objetivo de la práctica es familiarizarse con processing, para ello, vamos a
 En este caso se ha optado por intentar asemejarse lo máximo posible al pong original, incluso utilizando sonidos de 8 bits!
 
 ## Dependencias
-Para el desarrollo de la práctica se han utilizado los librerías:
+Para el desarrollo de la práctica se han utilizado las siguientes librerías:
 * La librería **sound** que se utiliza para la reproducción del sonido. Para su instalación seguir los pasos del guión de la práctica.
 * La librería **GifAnimation** que se utilizó para la obtencion del gif. Sin embargo, ya que no es necesario para el funcionamiento de la aplicación en este caso todo el código relacionado se encuentra comentado. No obstante, por si fuera necesario, en el siguiente [enlace](https://github.com/extrapixel/gif-animation) se encuentra la guía de instalación.
 
