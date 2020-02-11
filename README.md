@@ -37,7 +37,8 @@ Para el desarrollo de la práctica se han utilizado las siguientes librerías:
 
 Cuando comienza el juego, aparecerá una ventana principal donde se explicarán las instrucciones. En esta vista, se puede observar que los controles son los siguientes: 
 - Jugador1: up = w, down = s
-- Jugador2: up = flecha arriba, down = flecha abajo
+- Jugador2: up = flecha arriba, down = flecha abajo 
+
 Luego, comenzará el juego hasta el infinito (nuestro modelo de negocio es tener al jugador el máximo tiempo posible enganchado). Además, comentar que la bola siempre saldrá hacia el que ha marcado el último punto (imitando al pong).
 
 
